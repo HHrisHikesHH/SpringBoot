@@ -2,7 +2,6 @@ package com.hrishikesh.todo.controller;
 
 import com.hrishikesh.todo.model.ToDo;
 import com.hrishikesh.todo.service.ToDoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -45,12 +44,11 @@ public class ToDoController {
 //                "And you looks a healthy " + sex + "\n" + "you must be having a " + personality + " personality";
 //    }
 
-    @Autowired
-    private ToDoService service;
+    private final ToDoService service;
 
-//    public IToDoController(ToDoService service) {
-//        this.service = service;
-//    }
+    public ToDoController(ToDoService service) {
+        this.service = service;
+    }
 
     @PostMapping("add") //Create
     public void addToDo(@RequestBody ToDo toDo){

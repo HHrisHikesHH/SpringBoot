@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 @Service
-public class ToDoService implements ITodDoService{
+public class ToDoService {
     private static final List<ToDo> todos = new ArrayList<>(); // Acting as Local DataBase
     private static int todocount = 0;
 
@@ -44,7 +44,7 @@ public class ToDoService implements ITodDoService{
             if(toDo.getId() == id){
                 toDo.setId(todo.getId());
                 toDo.setTitle(todo.getTitle());
-                toDo.setStatus(todo.isStatus());
+                toDo.setStatus(todo.getStatus());
             }
         }
     }
