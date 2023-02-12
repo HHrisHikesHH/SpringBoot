@@ -7,7 +7,9 @@
 ## Data-Flow
     The Model or Event and Student is made separately
     They do not interact with each other, they have separate controller and service layers
-    When the RequestApi + respective operation API (Get/Put/Post/Delete) is hit the SpringBoot makes the object of controller and go to particular Mapping    and calls the respective service layer in which all the business logics is been written and return the required Model Data.
+    When the RequestApi + respective operation API (Get/Put/Post/Delete) is hit the SpringBoot 
+    makes the object of controller and go to particular Mapping and calls the respective service 
+    layer in which all the business logics is been written and return the required Model Data.
 
 ## DataStructures used in projects
     List is used for storing the Model objects.
