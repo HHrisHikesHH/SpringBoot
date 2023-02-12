@@ -13,7 +13,7 @@
     List is used for storing the Model objects.
 
 ## Project Summary
-    This project Manages the Students data and Events Data. 
+    This project Manages the Students data and Events Data and perfroms the following CRUD Operations when hit the API's  
     We can perform following operations on Students data
         Add student // Adds new Student
         update student department // Updates existing student
