@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/100271790/218320880-38bcd4c5-0b71-4819
 
 ### For More detailed explaination
 
-                https://drive.google.com/file/d/1A2Jg4Hity7nlzZmJtBroHB9uCOlUR8kf/view?usp=sharing
+    https://drive.google.com/file/d/1A2Jg4Hity7nlzZmJtBroHB9uCOlUR8kf/view?usp=sharing
 
 
 
