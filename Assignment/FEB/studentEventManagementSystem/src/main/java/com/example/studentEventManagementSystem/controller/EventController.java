@@ -1,7 +1,6 @@
-package com.hrishikesh.studentEventMangementSystem.controller;
-
-import com.hrishikesh.studentEventMangementSystem.model.Event;
-import com.hrishikesh.studentEventMangementSystem.service.EventService;
+package com.example.studentEventManagementSystem.controller;
+import com.example.studentEventManagementSystem.model.Event;
+import com.example.studentEventManagementSystem.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

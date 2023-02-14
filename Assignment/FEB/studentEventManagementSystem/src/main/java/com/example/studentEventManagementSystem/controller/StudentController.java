@@ -1,7 +1,7 @@
-package com.hrishikesh.studentEventMangementSystem.controller;
+package com.example.studentEventManagementSystem.controller;
 
-import com.hrishikesh.studentEventMangementSystem.model.Student;
-import com.hrishikesh.studentEventMangementSystem.service.StudentService;
+import com.example.studentEventManagementSystem.model.Student;
+import com.example.studentEventManagementSystem.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +13,7 @@ public class StudentController {
     @Autowired
     StudentService service;
 
-    @PostMapping("add")
+    @PostMapping("add")// ✅
     public String addStudent(@RequestBody Student student){// ✅
         return service.addStudent(student);
     }
@@ -32,13 +32,7 @@ public class StudentController {
         return service.getAll();
     }
     @GetMapping("get/id/{id}")// ✅
-    public Student getByID(@PathVariable int id){
+    public List<Student> getByID(@PathVariable int id){
         return service.getByID(id);
     }
 }
-
-//    Add student
-//    update student department
-//    delete student
-//    Get all students
-//    Get student by Id
