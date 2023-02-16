@@ -1,10 +1,4 @@
-# Project Link
-    https://github.com/HHrisHikesHH/SpringBoot/tree/main/Assignment/FEB/studentEventManagementSystem
-Project Linked is been change by the author please refer above link to find the updatated project    
-    
 # Student- Event Management System
-    
-    
     This Project stores the data of student and the college events and perform all of the crud operations on both the models
 
 ## Frameworks and language used 
