@@ -49,3 +49,5 @@ http://localhost:8080/api/User/deleteUser/{UserId}
 http://localhost:8080/api/User/updateUserInfo
 ```
 #### The above Links are used to perform CRUD operation on the User.
+
+## Video Demo
