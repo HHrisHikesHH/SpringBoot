@@ -18,15 +18,17 @@ import org.springframework.web.bind.annotation.*;
 public class LaptopController {
     @Autowired
     LaptopService service;
-    @PostMapping("saveLaptop")
+    @PostMapping("saveLaptop") // ✅
     private ResponseEntity<String> saveLaptop(@RequestBody Laptop laptop, @RequestParam Integer studentId){
         String response = service.saveLaptop(laptop, studentId);
-        if(response != null)
-            return new ResponseEntity<>(response + "Laptop saved!", HttpStatus.CREATED);
+        if(response != null){
+            if(response.equals("")) return new ResponseEntity<>("Student doesn't exist", HttpStatus.BAD_REQUEST);
+            else return new ResponseEntity<>(response + "Laptop saved!", HttpStatus.CREATED);
+        }
         else
-            return new ResponseEntity<>("Laptop already exist!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Laptop already exist ", HttpStatus.BAD_REQUEST);
     }
-    @GetMapping("getLaptop")
+    @GetMapping("getLaptop") // ✅
     private ResponseEntity<String> getLaptop(@Nullable @RequestParam Integer laptopId,
                                              @Nullable @RequestParam Integer studentId) throws JSONException {
         JSONArray response = service.getLaptop(laptopId, studentId);
@@ -34,12 +36,22 @@ public class LaptopController {
             return new ResponseEntity<>(response.toString(), HttpStatus.OK);
         else return new ResponseEntity<>("Laptop not found!", HttpStatus.NOT_FOUND);
     }
-    @DeleteMapping("updateLaptop")
-    private ResponseEntity<String> updateLaptop(@RequestParam Integer laptopId){
-        String response = service.updateLaptop(laptopId);
+    @DeleteMapping("deleteLaptop") // ✅
+    private ResponseEntity<String> deleteLaptop(@RequestParam Integer laptopId){
+        String response = service.deleteLaptop(laptopId);
         if(response != null)
-            return new ResponseEntity<>(response + " Laptop deleted!", HttpStatus.CREATED);
+            return new ResponseEntity<>(response + " Laptop deleted!", HttpStatus.OK);
         else
             return new ResponseEntity<>("Laptop already exist!", HttpStatus.BAD_REQUEST);
     }
+    @PutMapping("updateLaptop") // ✅
+    private ResponseEntity<String> updateLaptop(@RequestBody Laptop laptop,
+                                                @RequestParam Integer laptopId){
+        String response = service.updateLaptop(laptop,laptopId);
+        if(response != null)
+            return new ResponseEntity<>(response + " Laptop updated!", HttpStatus.OK);
+        else
+            return new ResponseEntity<>("Laptop not found!", HttpStatus.NOT_FOUND);
+    }
+
 }

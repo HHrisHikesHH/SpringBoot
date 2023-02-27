@@ -21,11 +21,16 @@ public class LaptopService {
     LaptopRepository repository;
     public String saveLaptop(Laptop laptop, Integer studentId) {
         String response = null;
-        if(!StudentRepository.existsById(studentId)){
-            Student student = StudentRepository.findById(studentId).get();
-            laptop.setStudent(student);
-            repository.save(laptop);
-            response = laptop.getName();
+        if(StudentRepository.existsById(studentId)) {
+                List<Laptop> laptopList = repository.findAll();
+                for(Laptop laptops: laptopList)
+                    if(laptops.getStudent().getStudentId().equals(studentId))
+                        return "";
+
+                Student student = StudentRepository.findById(studentId).get();
+                laptop.setStudent(student);
+                repository.save(laptop);
+                response = laptop.getName();
         }
         return response;
     }
@@ -60,11 +65,28 @@ public class LaptopService {
         obj.put("price", laptop.getPrice());
         return obj;
     }
-    public String updateLaptop(Integer laptopId) {
+    public String deleteLaptop(Integer laptopId) {
         String response = null;
         if(repository.existsById(laptopId)){
             response = repository.findById(laptopId).get().getName();
+            repository.deleteById(laptopId);
         }
         return response;
+    }
+
+    public String updateLaptop(Laptop newLaptop, Integer laptopId) {
+        String response = null;
+        if(repository.existsById(laptopId)){
+            Laptop oldLaptop = repository.findById(laptopId).get();
+            this.update(oldLaptop, newLaptop);
+            repository.save(oldLaptop);
+            response = oldLaptop.getName();
+        }
+        return response;
+    }
+    private void update(Laptop oldLaptop, Laptop newLaptop) {
+        if(newLaptop.getPrice() != null) oldLaptop.setPrice(newLaptop.getPrice());
+        if(newLaptop.getName() != null) oldLaptop.setName(newLaptop.getName());
+        if(newLaptop.getBrand() != null) oldLaptop.setBrand(newLaptop.getBrand());
     }
 }

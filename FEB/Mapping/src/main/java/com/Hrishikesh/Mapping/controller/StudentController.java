@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.*;
 public class StudentController {
     @Autowired
     StudentService service;
-    @PostMapping("saveStudent")
+    @PostMapping("saveStudent") // ✅
     private ResponseEntity<String> saveStudent(@RequestBody Student student){
         String response = service.saveStudent(student); // response = student name
         return new ResponseEntity<>("Student with name " + response + " saved!", HttpStatus.CREATED);
     }
 
-    @GetMapping("getStudent")
+    @GetMapping("getStudent") // ✅
     private ResponseEntity<String> getStudent(@Nullable @RequestParam Integer studentId) throws JSONException {
         JSONArray response = service.getStudent(studentId);
         if(response != null)
@@ -30,7 +30,7 @@ public class StudentController {
         else return new ResponseEntity<>("Student not found!", HttpStatus.NOT_FOUND);
     }
 
-    @PutMapping("updateStudent")
+    @PutMapping("updateStudent") // ✅
     private ResponseEntity<String> updateStudent(@RequestBody Student student, @RequestParam Integer studentId) throws JSONException {
         JSONObject response = service.updateStudent(student,studentId);
         if(response != null)
@@ -38,7 +38,7 @@ public class StudentController {
         else return new ResponseEntity<>("Student not found!", HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping("deleteStudent")
+    @DeleteMapping("deleteStudent") // ✅
     private ResponseEntity<String> deleteStudent(@RequestParam Integer studentId) throws JSONException {
         String response = service.deleteStudent(studentId); // response = student name
         if(response != null)

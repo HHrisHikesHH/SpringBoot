@@ -17,13 +17,13 @@ public class BookController {
 
     @Autowired
     BookService service;
-    @PostMapping("saveBook")
+    @PostMapping("saveBook") // ✅
     private ResponseEntity<String> saveBook(@RequestBody Book book, @RequestParam Integer studentId){
         service.saveBook(book, studentId);
         return new ResponseEntity<>("Book saved!", HttpStatus.CREATED);
     }
 
-    @GetMapping("getBook")
+    @GetMapping("getBook") // ✅
     private ResponseEntity<String> getBook(@Nullable @RequestParam Integer studentId,
                                            @Nullable @RequestParam Integer bookId) throws JSONException {
         JSONArray response = service.getBook(studentId, bookId);
@@ -32,7 +32,7 @@ public class BookController {
         else return new ResponseEntity<>("Book not found!", HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping("deleteBook")
+    @DeleteMapping("deleteBook") // ✅
     private ResponseEntity<String> deleteBook(@Nullable @RequestParam Integer studentId, @Nullable Integer bookId){
         if (studentId == null && bookId == null) return new ResponseEntity<>("Enter studentId or bookId", HttpStatus.BAD_REQUEST);
 
@@ -42,7 +42,7 @@ public class BookController {
         else return new ResponseEntity<>("Book not found!", HttpStatus.NOT_FOUND);
     }
 
-    @PutMapping("updateBook")
+    @PutMapping("updateBook") // ✅
     private ResponseEntity<String> updateBook(@RequestBody Book book, @RequestParam Integer bookId) throws JSONException {
         JSONObject response = service.updateBook(book,bookId);
         if(response != null)
