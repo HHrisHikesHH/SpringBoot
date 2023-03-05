@@ -1,9 +1,9 @@
 # Project : Custom Query & Query Annotation
 
 ## Frameworks and languages used
-    -> SpringBoot
-    -> Java
-    -> PostMan
+    ➡️ SpringBoot
+    ➡️ Java
+    ➡️ PostMan
 
 ## Data flow in the project
 0. Model : We have Single model here namely Student:
