@@ -20,7 +20,7 @@ endpoints for different keywords of native SQL such as Between, Less than , orde
 <img width="1059" alt="Screenshot 2023-03-05 at 8 53 06 PM" src="https://user-images.githubusercontent.com/100271790/222969566-014d64fa-7b62-49a8-b30f-f862a43acfe1.png">
 
   ### To see Entire controller 
-    https://github.com/HHrisHikesHH/SpringBoot/blob/main/MAR/custom-finder-methods-Query-Annotation/src/main/java/com/hrishikesh/custom/finder/methods/Query/Annotation/controller/StudentController.java
+https://github.com/HHrisHikesHH/SpringBoot/blob/main/MAR/custom-finder-methods-Query-Annotation/src/main/java/com/hrishikesh/custom/finder/methods/Query/Annotation/controller/StudentController.java
 
 2. Services : All the operations linked with controller is been implemented with additional logics in service layer, 
    service layer also interact with repository layer.
@@ -44,7 +44,8 @@ endpoints for different keywords of native SQL such as Between, Less than , orde
      ### To see Entire Repository
     https://github.com/HHrisHikesHH/SpringBoot/blob/main/MAR/custom-finder-methods-Query-Annotation/src/main/java/com/hrishikesh/custom/finder/methods/Query/Annotation/repository/IStudentRepository.java
 4. DataBase : Here i have used mySql database.
-5. Util : Util layer is added to do Validation of the data.
+   ### Table of Student contents
+   <img width="622" alt="Screenshot 2023-03-05 at 10 29 35 PM" src="https://user-images.githubusercontent.com/100271790/222974762-bcba7f4a-47d1-4f82-8293-a0e3f13e8f98.png">
 
 
 ## Data Structure Used in Project
@@ -53,10 +54,7 @@ endpoints for different keywords of native SQL such as Between, Less than , orde
 * String Array
 
 ## Project Summary
-We have implemented the Project to learn Mappings
-* One to One (Laptop - Student)
-* Many to One (Book - Student)
-* Many to Many (Course - Student)
+
 
 
 
