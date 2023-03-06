@@ -25,23 +25,26 @@ https://github.com/HHrisHikesHH/SpringBoot/edit/main/FEB/todo/src/main/java/com/
    service layer also interact with repository layer.
    
     ### Followings are the Glimse of the some of BussinessLogic Implemented in the Service:
-   
+   <img width="833" alt="Screenshot 2023-03-06 at 4 30 08 PM" src="https://user-images.githubusercontent.com/100271790/223092165-07822f00-904b-4099-9ed4-01a9114e6d06.png">
+
 
      ### To see Entire Service
-    https://github.com/HHrisHikesHH/SpringBoot/blob/main/MAR/custom-finder-methods-Query-Annotation/src/main/java/com/hrishikesh/custom/finder/methods/Query/Annotation/controller/service/StudentService.java
-3. Repository : Repository layer interacts with Database(mySql) and persist the changes requested, We extend the JPA repository to get the 
+[  https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/todo/src/main/java/com/hrishikesh/todo/service](https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/service/ToDoService.java)
+
+3. Repository : Repository layer interacts with Database(H2:DB) and persist the changes requested, We extend the JPA repository to get the 
    predefined function.
    Here inside JPARespository Interface we have another Interface called CRUDRepo with provides us some of the preDefined methods
-   We can also customise our own methods like-wise we have done in these particular project.
-   We can also access the repository data using @Query Annotation and need to write native or hibernate SQL query.
    
-    ### Followings are the Glimse of the some of Custom methods Implemented in the Repository:
-    <img width="1190" alt="Screenshot 2023-03-05 at 9 10 10 PM" src="https://user-images.githubusercontent.com/100271790/222970455-0900b23b-52c7-42ad-a444-83878af633cc.png">
-    <img width="1143" alt="Screenshot 2023-03-05 at 9 10 52 PM" src="https://user-images.githubusercontent.com/100271790/222970493-fa27e49c-e453-4fd0-8368-ccd69992fbc1.png">
+### Followings are the Glimse of the some of Custom methods Implemented in the Repository:
 
-     ### To see Entire Repository
-    https://github.com/HHrisHikesHH/SpringBoot/blob/main/MAR/custom-finder-methods-Query-Annotation/src/main/java/com/hrishikesh/custom/finder/methods/Query/Annotation/repository/IStudentRepository.java
-4. DataBase : Here i have used mySql database.
+<img width="680" alt="Screenshot 2023-03-06 at 4 33 48 PM" src="https://user-images.githubusercontent.com/100271790/223093000-ab0cf90b-eb59-4116-9935-f2a08c323c13.png">
+
+### To see Entire Repository
+https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/repository/ITodoRepository.java
+
+4. DataBase : Here i have used H2 : database.
+which is an in memory database stores all the data in RAM and as soon as program is re-run it refresh that 
+memory as a result the data is lost.
    ### Table of Student contents
    <img width="622" alt="Screenshot 2023-03-05 at 10 29 35 PM" src="https://user-images.githubusercontent.com/100271790/222974762-bcba7f4a-47d1-4f82-8293-a0e3f13e8f98.png">
 
