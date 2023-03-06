@@ -1,0 +1,96 @@
+# Project : TODO Application
+
+## Frameworks/Tools and languages used
+    ➡️ SpringBoot
+    ➡️ Java
+    ➡️ PostMan
+    ➡️ MySQL DataBase
+
+## Data flow in the project
+0. Model : We have Two models here namely User & Post:
+
+0.1  USER ⬇️
+
+<img width="528" alt="Screenshot 2023-03-06 at 9 08 55 PM" src="https://user-images.githubusercontent.com/100271790/223157682-a19386d6-eb30-4003-a8ba-cc45165e9825.png">
+
+0.2  POST ⬇️
+
+<img width="717" alt="Screenshot 2023-03-06 at 9 10 13 PM" src="https://user-images.githubusercontent.com/100271790/223158030-df967733-16ae-4287-80b8-5adab97c8a33.png">
+
+
+1. Controller : In Controller package the UserController is the gateWay to the API endpoints, Here we have provided many APIs perfrorm basic CRUD Operations on ToDo
+
+  ### Followings are the Glimse of the some of EndPoints of the Controller:
+<img width="687" alt="Screenshot 2023-03-06 at 4 21 20 PM" src="https://user-images.githubusercontent.com/100271790/223090084-1b6c302c-968c-4bec-9778-032cd4e101ac.png">
+
+
+
+  ### To see Entire controller 
+https://github.com/HHrisHikesHH/SpringBoot/edit/main/FEB/todo/src/main/java/com/hrishikesh/todo/controller/ToDoController.java
+
+2. Services : All the operations linked with controller is been implemented with additional logics in service layer, 
+   service layer also interact with repository layer.
+   
+    ### Followings are the Glimse of the some of BussinessLogic Implemented in the Service:
+   <img width="833" alt="Screenshot 2023-03-06 at 4 30 08 PM" src="https://user-images.githubusercontent.com/100271790/223092165-07822f00-904b-4099-9ed4-01a9114e6d06.png">
+
+
+### To see Entire Service
+[  https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/todo/src/main/java/com/hrishikesh/todo/service](https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/service/ToDoService.java)
+
+3. Repository : Repository layer interacts with Database(H2:DB) and persist the changes requested, We extend the JPA repository to get the 
+   predefined function.
+   Here inside JPARespository Interface we have another Interface called CRUDRepo with provides us some of the preDefined methods
+   
+### Followings are the Glimse of the some of Custom methods Implemented in the Repository:
+
+<img width="700" alt="Screenshot 2023-03-06 at 4 39 02 PM" src="https://user-images.githubusercontent.com/100271790/223094102-16664b4a-4929-430f-99ad-cdd61cb92d36.png">
+
+### To see Entire Repository
+https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/repository/ITodoRepository.java
+
+4. DataBase : Here i have used H2 : database.
+which is an in memory database stores all the data in RAM and as soon as program is re-run it refresh that 
+memory as a result the data is lost.
+   ### Table of TODO contents
+  <img width="403" alt="Screenshot 2023-03-06 at 4 37 32 PM" src="https://user-images.githubusercontent.com/100271790/223093896-271c4c30-c152-42a7-b149-f182237da890.png">
+
+## Data Structure Used in Project
+* ArrayList
+
+## Project Summary
+
+### Project Result
+➡️ : FindAll Todos : localhost:8081/api/v1/ToDo/findAll
+
+<img width="1440" alt="Screenshot 2023-03-06 at 4 07 48 PM" src="https://user-images.githubusercontent.com/100271790/223094523-74f1faec-2801-4ba0-b666-9f0e1c3c8a2a.png">
+
+➡️ : FindById Todos : localhost:8081/api/v1/ToDo/find/id/3
+
+<img width="1440" alt="Screenshot 2023-03-06 at 4 10 38 PM" src="https://user-images.githubusercontent.com/100271790/223094562-79dbb63b-c94e-4282-b8d5-cc8326744eeb.png">
+
+➡️ : Create Todo : localhost:8081/api/v1/ToDo/add
+
+<img width="1440" alt="Screenshot 2023-03-06 at 4 12 11 PM" src="https://user-images.githubusercontent.com/100271790/223094605-15d816ce-d9e7-4ef0-b8da-3f5a0feab2bb.png">
+
+➡️ : Update Todo : localhost:8081/api/v1/ToDo/put/id/6
+
+o<img width="1440" alt="Screenshot 2023-03-06 at 4 12 34 PM" src="https://user-images.githubusercontent.com/100271790/223094671-f8b1e907-0e5c-4870-9427-ef5f24b52510.png">
+
+➡️ : Delete Todo : localhost:8081/api/v1/ToDo/delete/id/7
+
+<img width="1440" alt="Screenshot 2023-03-06 at 4 13 04 PM" src="https://user-images.githubusercontent.com/100271790/223094778-8fd17b68-bd52-40c5-b8d4-4042c6a46864.png">
+
+## Project Demo
+
+https://user-images.githubusercontent.com/100271790/223099082-55a02d6b-a208-41c3-ac60-fdb65f2bce0a.mp4
+
+
+
+
+
+
+
+
+
+
