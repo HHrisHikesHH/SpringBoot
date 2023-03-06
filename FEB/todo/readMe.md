@@ -54,14 +54,23 @@ memory as a result the data is lost.
 ## Project Summary
 
 ### Project Result
+➡️ : FindAll Todos : localhost:8081/api/v1/ToDo/findAll
 
 <img width="1440" alt="Screenshot 2023-03-06 at 4 07 48 PM" src="https://user-images.githubusercontent.com/100271790/223094523-74f1faec-2801-4ba0-b666-9f0e1c3c8a2a.png">
 
+➡️ : FindById Todos : localhost:8081/api/v1/ToDo/find/id/3
+
 <img width="1440" alt="Screenshot 2023-03-06 at 4 10 38 PM" src="https://user-images.githubusercontent.com/100271790/223094562-79dbb63b-c94e-4282-b8d5-cc8326744eeb.png">
+
+➡️ : Create Todo : localhost:8081/api/v1/ToDo/add
 
 <img width="1440" alt="Screenshot 2023-03-06 at 4 12 11 PM" src="https://user-images.githubusercontent.com/100271790/223094605-15d816ce-d9e7-4ef0-b8da-3f5a0feab2bb.png">
 
+➡️ : Update Todo : localhost:8081/api/v1/ToDo/put/id/6
+
 o<img width="1440" alt="Screenshot 2023-03-06 at 4 12 34 PM" src="https://user-images.githubusercontent.com/100271790/223094671-f8b1e907-0e5c-4870-9427-ef5f24b52510.png">
+
+➡️ : Delete Todo : localhost:8081/api/v1/ToDo/delete/id/7
 
 <img width="1440" alt="Screenshot 2023-03-06 at 4 13 04 PM" src="https://user-images.githubusercontent.com/100271790/223094778-8fd17b68-bd52-40c5-b8d4-4042c6a46864.png">
 
