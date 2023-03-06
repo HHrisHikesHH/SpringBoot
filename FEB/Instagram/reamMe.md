@@ -59,6 +59,7 @@
 #### To see Entire Service
 [[  https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/todo/src/main/java/com/hrishikesh/todo/service](https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/service/ToDoService.java)](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/service)
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### 3. Repository : Repository layer interacts with Database(MySQL) and persist the changes requested, We extend the JPA repository to get the predefined function.Here inside JPARespository Interface we have another Interface called CRUDRepo with provides us some of the preDefined methods
    
@@ -77,8 +78,10 @@
 #### To see Entire Repository
 [https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/repository/ITodoRepository.java](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/repository)
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### 4. DataBase : Here i have used mySQL : This database persist data even when the program is re-run.
-   #### Table of TODO contents
+   #### Table of User contents
   <img width="403" alt="Screenshot 2023-03-06 at 4 37 32 PM" src="https://user-images.githubusercontent.com/100271790/223093896-271c4c30-c152-42a7-b149-f182237da890.png">
 
 ## Data Structure Used in Project
