@@ -1,51 +1,51 @@
 package com.hrishikesh.todo.service;
 
-import com.hrishikesh.todo.model.ToDo;
+import com.hrishikesh.todo.model.Todo;
+import com.hrishikesh.todo.repository.ITodoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 @Service
 public class ToDoService implements ITodDoService{
-    private static final List<ToDo> todos = new ArrayList<>(); // Acting as Local DataBase
+    private static final List<Todo> todos = new ArrayList<>(); // Acting as Local DataBase
     private static int todocount = 0;
 
-    static{
+    @Autowired
+    private ITodoRepository iTodoRepository;
 
-        todos.add(new ToDo(++todocount, "Wake up", false));
-        todos.add(new ToDo(++todocount, "Hydrate", false));
-        todos.add(new ToDo(++todocount, "Meditate", false));
-        todos.add(new ToDo(++todocount, "Stretch & Exercise", false));
-        todos.add(new ToDo(++todocount, "Study", false));
+//    static{ // transferred to data.sql
+//
+//        todos.add(new Todo(++todocount, "Wake up", false));
+//        todos.add(new Todo(++todocount, "Hydrate", false));
+//        todos.add(new Todo(++todocount, "Meditate", false));
+//        todos.add(new Todo(++todocount, "Stretch & Exercise", false));
+//        todos.add(new Todo(++todocount, "Study", false));
+//
+//    }
 
+    public List<Todo> findAll(){
+        return iTodoRepository.findAll();
     }
 
-    public List<ToDo> findAll(){
-        return todos;
+    public Object findById(int id) {
+        return iTodoRepository.findById(id);
     }
 
-    public ToDo findById(int id) {
-        for(ToDo todo : todos)
-            if(todo.getId() == id)
-                return todo;
-        return new ToDo(-1, "TASK NOT FOUND", true);
+    public String add(Todo toDo){
+        iTodoRepository.save(toDo);
+        return toDo.getTitle() + " - Todo Added";
     }
 
-    public void addTodo(ToDo toDo){
-        todos.add(toDo);
+    public String deleteById(int id) {
+        iTodoRepository.deleteById(id);
+        return "Todo at " + id + " Deleted";
     }
 
-    public void delete(int id) {
-        todos.removeIf(todo -> todo.getId() == id);
-    }
-
-    public void update(int id, ToDo todo) {
-        for(ToDo toDo: todos){
-            if(toDo.getId() == id){
-                toDo.setId(todo.getId());
-                toDo.setTitle(todo.getTitle());
-                toDo.setStatus(todo.isStatus());
-            }
-        }
+    public String updateById(int id, Todo todo) {
+        this.deleteById(id);
+        this.add(todo);
+        return todo.getTitle() + " - Todo Updated";
     }
 }

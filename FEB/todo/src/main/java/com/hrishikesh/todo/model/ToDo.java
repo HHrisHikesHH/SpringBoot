@@ -1,22 +1,20 @@
 package com.hrishikesh.todo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-public class ToDo {
-    @Id //
+@Entity // for creating data base with class name
+//@Entity(name = "TooDoo") //change the name
+public class Todo {
+    @Id // making data base entry (primary key)
     @GeneratedValue(strategy = GenerationType.IDENTITY) //for auto incrementing
     private int id;
+//    @Column(name = "ToDo title") // name change of col in table
     private String title;
     private boolean status;
 
