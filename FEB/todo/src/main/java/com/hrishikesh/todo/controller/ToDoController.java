@@ -12,45 +12,8 @@ import java.util.List;
 @RequestMapping("api/v1/ToDo/")
 public class ToDoController {
 
-//    @RequestMapping("msg")
-////    @ResponseBody
-//    public String getMessage(){
-//        return "Namaste";
-//    }
-
-//    url -> http://localhost:8080/api?username=Hrishikesh
-//    @RequestMapping("/api")
-//    public String getMessage(@RequestParam String username){
-//        return "hello " + username + " sir!";
-//    }
-
-////    url -> http://localhost:8080/api/username/Hrishikesh
-//    @RequestMapping("/api/username/{username}")
-//    public String getMessage(@PathVariable String username){
-//        return "hello " + username + " sir!";
-//    }
-
-
-//    url -> http://localhost:8080/api?username=Hrishikesh&age=25&sex=male&personality=Great
-//    @RequestMapping("/api")
-//    public String getMessage(@RequestParam String username, @RequestParam int age, @RequestParam String sex, @RequestParam String personality){
-//        return "Hello " + username + " sir!\n" + "Your age seems " + age + "yr\n" +
-//                "And you looks a healthy " + sex + "\n" + "you must be having a " + personality + " personality";
-//    }
-
-    //    url -> http://localhost:8080/api/username/Hrishikesh/age/25/sex/male/personality/Great
-//    @RequestMapping("/api/username/{username}/age/{age}/sex/{sex}/personality/{personality}")
-//    public String getMessage(@PathVariable String username, @PathVariable int age, @PathVariable String sex, @PathVariable String personality){
-//        return "Hello " + username + " sir!\n" + "Your age seems " + age + "yr\n" +
-//                "And you looks a healthy " + sex + "\n" + "you must be having a " + personality + " personality";
-//    }
-
     @Autowired
     private ToDoService service;
-
-//    public IToDoController(ToDoService service) {
-//        this.service = service;
-//    }
 
     @PostMapping("add") //Create
     public void addToDo(@RequestBody ToDo toDo){
