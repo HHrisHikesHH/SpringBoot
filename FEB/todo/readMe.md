@@ -76,20 +76,7 @@ o<img width="1440" alt="Screenshot 2023-03-06 at 4 12 34 PM" src="https://user-i
 
 ## Project Demo
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://user-images.githubusercontent.com/100271790/223099082-55a02d6b-a208-41c3-ac60-fdb65f2bce0a.mp4
 
 
 
