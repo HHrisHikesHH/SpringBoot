@@ -82,37 +82,70 @@
 
 ### 4. DataBase : Here i have used mySQL : This database persist data even when the program is re-run.
    #### Table of User contents
-  <img width="403" alt="Screenshot 2023-03-06 at 4 37 32 PM" src="https://user-images.githubusercontent.com/100271790/223093896-271c4c30-c152-42a7-b149-f182237da890.png">
+<img width="710" alt="Screenshot 2023-03-06 at 10 31 23 PM" src="https://user-images.githubusercontent.com/100271790/223179483-f5998f2c-a99a-4797-b847-888bc94ae3ac.png">
+
+ #### Table of Post contents
+
+<img width="755" alt="Screenshot 2023-03-06 at 10 32 30 PM" src="https://user-images.githubusercontent.com/100271790/223179732-63a9df82-3715-4150-be7f-b041a04126fb.png">
+
 
 ## Data Structure Used in Project
 * ArrayList
+* JSONArray
+* JSONObject
 
 ## Project Summary
 
 ### Project Result
-➡️ : FindAll Todos : localhost:8081/api/v1/ToDo/findAll
+➡️ : FindAll Users : localhost:8080/api/v1/user/get
 
-<img width="1440" alt="Screenshot 2023-03-06 at 4 07 48 PM" src="https://user-images.githubusercontent.com/100271790/223094523-74f1faec-2801-4ba0-b666-9f0e1c3c8a2a.png">
+<img width="1440" alt="Screenshot 2023-03-06 at 9 03 14 PM" src="https://user-images.githubusercontent.com/100271790/223180261-762b3ef3-13f6-423a-8708-5f2f6c49c745.png">
 
-➡️ : FindById Todos : localhost:8081/api/v1/ToDo/find/id/3
+➡️ : FindAll Active Users : localhost:8080/api/v1/user/get?password=pass
 
-<img width="1440" alt="Screenshot 2023-03-06 at 4 10 38 PM" src="https://user-images.githubusercontent.com/100271790/223094562-79dbb63b-c94e-4282-b8d5-cc8326744eeb.png">
+<img width="1440" alt="Screenshot 2023-03-06 at 10 35 26 PM" src="https://user-images.githubusercontent.com/100271790/223180374-2195975b-afb8-49e5-85d5-bd5d7048f70f.png">
 
-➡️ : Create Todo : localhost:8081/api/v1/ToDo/add
 
-<img width="1440" alt="Screenshot 2023-03-06 at 4 12 11 PM" src="https://user-images.githubusercontent.com/100271790/223094605-15d816ce-d9e7-4ef0-b8da-3f5a0feab2bb.png">
+➡️ : FindById User : localhost:8080/api/v1/user/get?userId=10
 
-➡️ : Update Todo : localhost:8081/api/v1/ToDo/put/id/6
+<img width="1440" alt="Screenshot 2023-03-06 at 10 37 40 PM" src="https://user-images.githubusercontent.com/100271790/223180901-2e187c39-915c-49ec-adaf-c928a4805fc7.png">
 
-o<img width="1440" alt="Screenshot 2023-03-06 at 4 12 34 PM" src="https://user-images.githubusercontent.com/100271790/223094671-f8b1e907-0e5c-4870-9427-ef5f24b52510.png">
 
-➡️ : Delete Todo : localhost:8081/api/v1/ToDo/delete/id/7
+➡️ : Create User : localhost:8080/api/v1/user/save
 
-<img width="1440" alt="Screenshot 2023-03-06 at 4 13 04 PM" src="https://user-images.githubusercontent.com/100271790/223094778-8fd17b68-bd52-40c5-b8d4-4042c6a46864.png">
+<img width="1440" alt="Screenshot 2023-03-06 at 9 02 33 PM" src="https://user-images.githubusercontent.com/100271790/223180691-ac4e8282-1eb7-4a7e-bdd7-2d4ae76e2d85.png">
 
-## Project Demo
 
-https://user-images.githubusercontent.com/100271790/223099082-55a02d6b-a208-41c3-ac60-fdb65f2bce0a.mp4
+➡️ : Update User : localhost:8080/api/v1/user/update?userId=14
+
+<img width="1440" alt="Screenshot 2023-03-06 at 9 02 42 PM" src="https://user-images.githubusercontent.com/100271790/223180738-18bbaa90-79e7-4cc2-8298-0944da5d2161.png">
+
+
+➡️ : Delete User : localhost:8080/api/v1/user/delete?userId=14
+
+<img width="1440" alt="Screenshot 2023-03-06 at 9 03 09 PM" src="https://user-images.githubusercontent.com/100271790/223181116-cde67e0d-30a4-433b-b78c-4ec940bd9ce4.png">
+
+➡️ : FindAll Posts : localhost:8080/api/v1/post/get
+
+<img width="1440" alt="Screenshot 2023-03-06 at 10 42 20 PM" src="https://user-images.githubusercontent.com/100271790/223182741-caeb3c65-e763-4348-a5a5-9a464c80c60a.png">
+
+➡️ : FindById Posts : localhost:8080/api/v1/post/get?postId=4
+
+<img width="1440" alt="Screenshot 2023-03-06 at 10 42 41 PM" src="https://user-images.githubusercontent.com/100271790/223182864-e23f51d5-8f95-458e-9f83-dcbea42c0a5c.png">
+
+➡️ : Create Post : localhost:8080/api/v1/post/save
+
+<img width="1440" alt="Screenshot 2023-03-06 at 10 52 37 PM" src="https://user-images.githubusercontent.com/100271790/223185248-ee4eb439-5c21-46ac-b891-60b557b0e681.png">
+
+➡️ : Update Post : localhost:8080/api/v1/post/update?postId=11
+
+<img width="1440" alt="Screenshot 2023-03-06 at 10 54 15 PM" src="https://user-images.githubusercontent.com/100271790/223185180-a4cb4607-5e2c-40ad-8ef7-a695a9c26f5d.png">
+
+➡️ : Delete Post : localhost:8080/api/v1/post/delete?postId=10
+
+<img width="1440" alt="Screenshot 2023-03-06 at 10 52 18 PM" src="https://user-images.githubusercontent.com/100271790/223185416-0c43f50d-a08c-47df-ae66-bc2e4879cd83.png">
+
+
 
 
 
