@@ -1,58 +1,84 @@
-# Project : TODO Application
+# Project : Instagram Application
 
 ## Frameworks/Tools and languages used
     ➡️ SpringBoot
     ➡️ Java
     ➡️ PostMan
     ➡️ MySQL DataBase
-
+--------------------------------------------------------------------------------------------------------------------
 ## Data flow in the project
-0. Model : We have Two models here namely User & Post:
+ ### 0. Model : We have Two models here namely User & Post:
 
-0.1  USER ⬇️
+ #### Followings are the Glimse of the Models:
+
+##### 0.1  USER ⬇️
 
 <img width="528" alt="Screenshot 2023-03-06 at 9 08 55 PM" src="https://user-images.githubusercontent.com/100271790/223157682-a19386d6-eb30-4003-a8ba-cc45165e9825.png">
 
-0.2  POST ⬇️
+##### 0.2  POST ⬇️
 
 <img width="717" alt="Screenshot 2023-03-06 at 9 10 13 PM" src="https://user-images.githubusercontent.com/100271790/223158030-df967733-16ae-4287-80b8-5adab97c8a33.png">
 
+ #### To see Models
+ https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/model
 
-1. Controller : In Controller package the UserController is the gateWay to the API endpoints, Here we have provided many APIs perfrorm basic CRUD Operations on ToDo
+--------------------------------------------------------------------------------------------------------------------
 
-  ### Followings are the Glimse of the some of EndPoints of the Controller:
-<img width="687" alt="Screenshot 2023-03-06 at 4 21 20 PM" src="https://user-images.githubusercontent.com/100271790/223090084-1b6c302c-968c-4bec-9778-032cd4e101ac.png">
+### 1. Controller : In Controller package the UserController is the gateWay to the API endpoints, Here we have provided many APIs perfrorm basic CRUD Operations on ToDo
+
+  #### Followings are the Glimse of the some of EndPoints of the Controller:
+ 
+##### 1.1  USER ⬇️  
+  
+<img width="997" alt="Screenshot 2023-03-06 at 9 18 40 PM" src="https://user-images.githubusercontent.com/100271790/223160512-c4e69bcf-fe91-4597-9460-7433db5a682e.png">
+
+##### 1.2  POST ⬇️
+  
+<img width="1000" alt="Screenshot 2023-03-06 at 9 18 03 PM" src="https://user-images.githubusercontent.com/100271790/223160351-f5dcffe5-0ae3-4df2-9453-a35c025f5cbb.png">
 
 
+  #### To see Entire controller 
+[https://github.com/HHrisHikesHH/SpringBoot/edit/main/FEB/todo/src/main/java/com/hrishikesh/todo/controller/ToDoController.java](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/controller)
 
-  ### To see Entire controller 
-https://github.com/HHrisHikesHH/SpringBoot/edit/main/FEB/todo/src/main/java/com/hrishikesh/todo/controller/ToDoController.java
+--------------------------------------------------------------------------------------------------------------------
 
-2. Services : All the operations linked with controller is been implemented with additional logics in service layer, 
-   service layer also interact with repository layer.
+### 2. Services : All the operations linked with controller is been implemented with additional logics in service layer, service layer also interact with repository layer.
    
-    ### Followings are the Glimse of the some of BussinessLogic Implemented in the Service:
-   <img width="833" alt="Screenshot 2023-03-06 at 4 30 08 PM" src="https://user-images.githubusercontent.com/100271790/223092165-07822f00-904b-4099-9ed4-01a9114e6d06.png">
-
-
-### To see Entire Service
-[  https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/todo/src/main/java/com/hrishikesh/todo/service](https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/service/ToDoService.java)
-
-3. Repository : Repository layer interacts with Database(H2:DB) and persist the changes requested, We extend the JPA repository to get the 
-   predefined function.
-   Here inside JPARespository Interface we have another Interface called CRUDRepo with provides us some of the preDefined methods
+   #### Followings are the Glimse of the some of BussinessLogic Implemented in the Service:
    
-### Followings are the Glimse of the some of Custom methods Implemented in the Repository:
+##### 2.1  USER ⬇️  
 
-<img width="700" alt="Screenshot 2023-03-06 at 4 39 02 PM" src="https://user-images.githubusercontent.com/100271790/223094102-16664b4a-4929-430f-99ad-cdd61cb92d36.png">
+<img width="727" alt="Screenshot 2023-03-06 at 9 34 13 PM" src="https://user-images.githubusercontent.com/100271790/223164852-213ee5bb-106d-4b4d-80b0-524e070f0721.png">
 
-### To see Entire Repository
-https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/repository/ITodoRepository.java
+ 
+##### 2.2  POST ⬇️ 
 
-4. DataBase : Here i have used H2 : database.
-which is an in memory database stores all the data in RAM and as soon as program is re-run it refresh that 
-memory as a result the data is lost.
-   ### Table of TODO contents
+ <img width="782" alt="Screenshot 2023-03-06 at 9 31 51 PM" src="https://user-images.githubusercontent.com/100271790/223164178-a0240b6c-6572-4a90-823b-63ed7032aff1.png">
+
+
+#### To see Entire Service
+[[  https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/todo/src/main/java/com/hrishikesh/todo/service](https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/service/ToDoService.java)](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/service)
+
+
+### 3. Repository : Repository layer interacts with Database(MySQL) and persist the changes requested, We extend the JPA repository to get the predefined function.Here inside JPARespository Interface we have another Interface called CRUDRepo with provides us some of the preDefined methods
+   
+#### Followings are the Glimse of the some of Custom methods Implemented in the Repository:
+
+##### 3.1  USER ⬇️  
+
+<img width="648" alt="Screenshot 2023-03-06 at 9 37 02 PM" src="https://user-images.githubusercontent.com/100271790/223165577-8d7f8553-0cbd-4562-a112-6982c3fc382a.png">
+
+
+##### 3.2  POST ⬇️ 
+
+<img width="653" alt="Screenshot 2023-03-06 at 9 37 18 PM" src="https://user-images.githubusercontent.com/100271790/223165647-bc130c04-32b1-4df0-9715-7f876324647f.png">
+
+
+#### To see Entire Repository
+[https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/repository/ITodoRepository.java](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/repository)
+
+### 4. DataBase : Here i have used mySQL : This database persist data even when the program is re-run.
+   #### Table of TODO contents
   <img width="403" alt="Screenshot 2023-03-06 at 4 37 32 PM" src="https://user-images.githubusercontent.com/100271790/223093896-271c4c30-c152-42a7-b149-f182237da890.png">
 
 ## Data Structure Used in Project
