@@ -7,28 +7,25 @@
     ➡️ H2 DataBase
 
 ## Data flow in the project
-0. Model : We have Single model here namely user:
+0. Model : We have Single model here namely ToDo:
 
+<img width="742" alt="Screenshot 2023-03-06 at 4 16 54 PM" src="https://user-images.githubusercontent.com/100271790/223088972-d940201c-7c3f-49d5-afc2-9e0973b0d04d.png">
 
-<img width="486" alt="Screenshot 2023-03-05 at 8 44 41 PM" src="https://user-images.githubusercontent.com/100271790/222969103-d2d33cd0-90ce-4aa2-af93-b6a9e6c4798b.png">
-
-
-1. Controller : In Controller pakage the StudentController is the gateWay to the API endpoints, Here we have provided many 
-endpoints for different keywords of native SQL such as Between, Less than , order by etc.
+1. Controller : In Controller package the UserController is the gateWay to the API endpoints, Here we have provided many APIs perfrorm basic CRUD Operations on ToDo
 
   ### Followings are the Glimse of the some of EndPoints of the Controller:
+<img width="687" alt="Screenshot 2023-03-06 at 4 21 20 PM" src="https://user-images.githubusercontent.com/100271790/223090084-1b6c302c-968c-4bec-9778-032cd4e101ac.png">
 
-<img width="1059" alt="Screenshot 2023-03-05 at 8 53 06 PM" src="https://user-images.githubusercontent.com/100271790/222969566-014d64fa-7b62-49a8-b30f-f862a43acfe1.png">
+
 
   ### To see Entire controller 
-https://github.com/HHrisHikesHH/SpringBoot/blob/main/MAR/custom-finder-methods-Query-Annotation/src/main/java/com/hrishikesh/custom/finder/methods/Query/Annotation/controller/StudentController.java
+https://github.com/HHrisHikesHH/SpringBoot/edit/main/FEB/todo/src/main/java/com/hrishikesh/todo/controller/ToDoController.java
 
 2. Services : All the operations linked with controller is been implemented with additional logics in service layer, 
    service layer also interact with repository layer.
    
     ### Followings are the Glimse of the some of BussinessLogic Implemented in the Service:
-    <img width="1022" alt="Screenshot 2023-03-05 at 9 04 38 PM" src="https://user-images.githubusercontent.com/100271790/222970134-7e037e3d-f95b-4d4b-a18a-3e866088efa4.png">
-    <img width="1057" alt="Screenshot 2023-03-05 at 9 04 59 PM" src="https://user-images.githubusercontent.com/100271790/222970160-1f8f9ae1-b8a7-48a8-9b88-b5afb6732264.png">
+   
 
      ### To see Entire Service
     https://github.com/HHrisHikesHH/SpringBoot/blob/main/MAR/custom-finder-methods-Query-Annotation/src/main/java/com/hrishikesh/custom/finder/methods/Query/Annotation/controller/service/StudentService.java
