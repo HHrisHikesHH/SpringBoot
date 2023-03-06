@@ -74,7 +74,7 @@ o<img width="1440" alt="Screenshot 2023-03-06 at 4 12 34 PM" src="https://user-i
 
 <img width="1440" alt="Screenshot 2023-03-06 at 4 13 04 PM" src="https://user-images.githubusercontent.com/100271790/223094778-8fd17b68-bd52-40c5-b8d4-4042c6a46864.png">
 
-## Project Dem0
+## Project Demo
 
 
 
