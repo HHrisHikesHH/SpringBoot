@@ -15,16 +15,6 @@ public class ToDoService implements ITodDoService{
     @Autowired
     private ITodoRepository iTodoRepository;
 
-//    static{ // transferred to data.sql
-//
-//        todos.add(new Todo(++todocount, "Wake up", false));
-//        todos.add(new Todo(++todocount, "Hydrate", false));
-//        todos.add(new Todo(++todocount, "Meditate", false));
-//        todos.add(new Todo(++todocount, "Stretch & Exercise", false));
-//        todos.add(new Todo(++todocount, "Study", false));
-//
-//    }
-
     public List<Todo> findAll(){
         return iTodoRepository.findAll();
     }
