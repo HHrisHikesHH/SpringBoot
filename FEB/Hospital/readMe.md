@@ -7,20 +7,20 @@
     ➡️ MySQL DataBase
 --------------------------------------------------------------------------------------------------------------------
 ## Data flow in the project
- ### 0. Model : We have Two models here namely User & Post:
+ ### 0. Model : We have Two models here namely Doctor & Patient:
 
  #### Followings are the Glimse of the Models:
 
-##### 0.1  USER ⬇️
+##### 0.1  Doctor ⬇️
 
-<img width="528" alt="Screenshot 2023-03-06 at 9 08 55 PM" src="https://user-images.githubusercontent.com/100271790/223157682-a19386d6-eb30-4003-a8ba-cc45165e9825.png">
+<img width="532" alt="Screenshot 2023-03-07 at 3 40 21 PM" src="https://user-images.githubusercontent.com/100271790/223391278-d3eef271-fa10-4a67-b073-b7159eeb608e.png">
 
-##### 0.2  POST ⬇️
+##### 0.2  Patient ⬇️
 
-<img width="717" alt="Screenshot 2023-03-06 at 9 10 13 PM" src="https://user-images.githubusercontent.com/100271790/223158030-df967733-16ae-4287-80b8-5adab97c8a33.png">
+<img width="580" alt="Screenshot 2023-03-07 at 3 40 42 PM" src="https://user-images.githubusercontent.com/100271790/223391379-42c01a6e-1655-4856-812e-94ecb7be44b5.png">
 
  #### To see Models
- https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/model
+(https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Hospital/src/main/java/com/hrishikesh/Hospital/model)
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -28,17 +28,17 @@
 
   #### Followings are the Glimse of the some of EndPoints of the Controller:
  
-##### 1.1  USER ⬇️  
+##### 1.1  Doctor ⬇️  
   
-<img width="997" alt="Screenshot 2023-03-06 at 9 18 40 PM" src="https://user-images.githubusercontent.com/100271790/223160512-c4e69bcf-fe91-4597-9460-7433db5a682e.png">
+<img width="978" alt="Screenshot 2023-03-07 at 3 42 41 PM" src="https://user-images.githubusercontent.com/100271790/223391825-4bc8f8a2-4dd9-42b9-a9fe-73f485ee892e.png">
 
-##### 1.2  POST ⬇️
-  
-<img width="1000" alt="Screenshot 2023-03-06 at 9 18 03 PM" src="https://user-images.githubusercontent.com/100271790/223160351-f5dcffe5-0ae3-4df2-9453-a35c025f5cbb.png">
+##### 1.2  Patient ⬇️
+
+<img width="977" alt="Screenshot 2023-03-07 at 3 42 59 PM" src="https://user-images.githubusercontent.com/100271790/223391891-88b966b2-a024-434a-a18b-dd2e5b48e23d.png">
 
 
   #### To see Entire controller 
-[https://github.com/HHrisHikesHH/SpringBoot/edit/main/FEB/todo/src/main/java/com/hrishikesh/todo/controller/ToDoController.java](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/controller)
+(https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Hospital/src/main/java/com/hrishikesh/Hospital/controller)
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -46,18 +46,19 @@
    
    #### Followings are the Glimse of the some of BussinessLogic Implemented in the Service:
    
-##### 2.1  USER ⬇️  
+##### 2.1  Doctor ⬇️  
 
-<img width="727" alt="Screenshot 2023-03-06 at 9 34 13 PM" src="https://user-images.githubusercontent.com/100271790/223164852-213ee5bb-106d-4b4d-80b0-524e070f0721.png">
+<img width="703" alt="Screenshot 2023-03-07 at 3 44 05 PM" src="https://user-images.githubusercontent.com/100271790/223392165-9e1c2034-9078-4aa3-a882-e3285d1142f5.png">
 
  
-##### 2.2  POST ⬇️ 
+##### 2.2  Patient ⬇️ 
 
- <img width="782" alt="Screenshot 2023-03-06 at 9 31 51 PM" src="https://user-images.githubusercontent.com/100271790/223164178-a0240b6c-6572-4a90-823b-63ed7032aff1.png">
+<img width="745" alt="Screenshot 2023-03-07 at 3 44 31 PM" src="https://user-images.githubusercontent.com/100271790/223392278-83ec619a-a663-4a4e-96bf-3e7d0e16b3d9.png">
 
 
 #### To see Entire Service
-[[  https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/todo/src/main/java/com/hrishikesh/todo/service](https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/service/ToDoService.java)](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/service)
+
+(https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Hospital/src/main/java/com/hrishikesh/Hospital/service)
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -65,39 +66,30 @@
    
 #### Followings are the Glimse of the some of Custom methods Implemented in the Repository:
 
-##### 3.1  USER ⬇️  
+##### 3.1  Doctor ⬇️  
 
-<img width="648" alt="Screenshot 2023-03-06 at 9 37 02 PM" src="https://user-images.githubusercontent.com/100271790/223165577-8d7f8553-0cbd-4562-a112-6982c3fc382a.png">
+<img width="699" alt="Screenshot 2023-03-07 at 3 45 28 PM" src="https://user-images.githubusercontent.com/100271790/223392551-b97c2f7a-bf46-4d3d-8eea-423d95d10def.png">
 
 
-##### 3.2  POST ⬇️ 
+##### 3.2  Patient ⬇️ 
 
-<img width="653" alt="Screenshot 2023-03-06 at 9 37 18 PM" src="https://user-images.githubusercontent.com/100271790/223165647-bc130c04-32b1-4df0-9715-7f876324647f.png">
+<img width="800" alt="Screenshot 2023-03-07 at 3 45 43 PM" src="https://user-images.githubusercontent.com/100271790/223392614-9a9957a4-4af5-459f-9655-be4d2eef87ad.png">
 
 
 #### To see Entire Repository
-[https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/todo/src/main/java/com/hrishikesh/todo/repository/ITodoRepository.java](https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/repository)
+
+(https://github.com/HHrisHikesHH/SpringBoot/tree/main/FEB/Hospital/src/main/java/com/hrishikesh/Hospital/repository)
 
 --------------------------------------------------------------------------------------------------------------------
 
 ### 4. DataBase : Here i have used mySQL : This database persist data even when the program is re-run.
-   #### Table of User contents
-<img width="710" alt="Screenshot 2023-03-06 at 10 31 23 PM" src="https://user-images.githubusercontent.com/100271790/223179483-f5998f2c-a99a-4797-b847-888bc94ae3ac.png">
+   #### Table of Doctor contents
 
- #### Table of Post contents
+<img width="495" alt="Screenshot 2023-03-07 at 3 47 30 PM" src="https://user-images.githubusercontent.com/100271790/223393128-907b6daf-4c93-422d-8fb1-7f93f0ef2347.png">
 
-<img width="755" alt="Screenshot 2023-03-06 at 10 32 30 PM" src="https://user-images.githubusercontent.com/100271790/223179732-63a9df82-3715-4150-be7f-b041a04126fb.png">
+ #### Table of Patient contents
 
-### 5. Util : Here i have done StringToJSONObjectTo{requiredObject} : 
-
-#### Followings are the Glimse of the util:
-
-<img width="675" alt="Screenshot 2023-03-07 at 3 34 24 PM" src="https://user-images.githubusercontent.com/100271790/223389830-43d5fd74-8dc3-482c-931b-1f2d788b56bb.png">
-
-#### To see Entire util
-
-https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/Instagram/src/main/java/com/hrishikesh/Instagram/util/Util.java
-
+<img width="689" alt="Screenshot 2023-03-07 at 3 48 33 PM" src="https://user-images.githubusercontent.com/100271790/223393385-caa5a130-2f62-4f3c-ba8d-dac54fdb47eb.png">
 
 ## Data Structure Used in Project
 * ArrayList
@@ -107,53 +99,54 @@ https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/Instagram/src/main/java
 ## Project Summary
 
 ### Project Result
-➡️ : FindAll Users : localhost:8080/api/v1/user/get
+➡️ : FindAll Doctor : localhost:8080/api/v1/doctor/getDoctor
 
-<img width="1440" alt="Screenshot 2023-03-06 at 9 03 14 PM" src="https://user-images.githubusercontent.com/100271790/223180261-762b3ef3-13f6-423a-8708-5f2f6c49c745.png">
-
-➡️ : FindAll Active Users : localhost:8080/api/v1/user/get?password=pass
-
-<img width="1440" alt="Screenshot 2023-03-06 at 10 35 26 PM" src="https://user-images.githubusercontent.com/100271790/223180374-2195975b-afb8-49e5-85d5-bd5d7048f70f.png">
+<img width="1440" alt="Screenshot 2023-03-07 at 3 56 21 PM" src="https://user-images.githubusercontent.com/100271790/223396426-ddb4b358-b4bc-41cf-9b51-7fa44cb21893.png">
 
 
-➡️ : FindById User : localhost:8080/api/v1/user/get?userId=10
+➡️ : FindById Doctor : localhost:8080/api/v1/doctor/getDoctor?doctorId=1
 
-<img width="1440" alt="Screenshot 2023-03-06 at 10 37 40 PM" src="https://user-images.githubusercontent.com/100271790/223180901-2e187c39-915c-49ec-adaf-c928a4805fc7.png">
-
-
-➡️ : Create User : localhost:8080/api/v1/user/save
-
-<img width="1440" alt="Screenshot 2023-03-06 at 9 02 33 PM" src="https://user-images.githubusercontent.com/100271790/223180691-ac4e8282-1eb7-4a7e-bdd7-2d4ae76e2d85.png">
+<img width="1440" alt="Screenshot 2023-03-07 at 3 56 31 PM" src="https://user-images.githubusercontent.com/100271790/223396528-25d7e19e-76da-4b2a-b704-fed909ae3206.png">
 
 
-➡️ : Update User : localhost:8080/api/v1/user/update?userId=14
+➡️ : Create Doctor : localhost:8080/api/v1/doctor/saveDoctor
 
-<img width="1440" alt="Screenshot 2023-03-06 at 9 02 42 PM" src="https://user-images.githubusercontent.com/100271790/223180738-18bbaa90-79e7-4cc2-8298-0944da5d2161.png">
+<img width="1440" alt="Screenshot 2023-03-07 at 3 56 13 PM" src="https://user-images.githubusercontent.com/100271790/223396563-081f3609-cd9f-4970-86e9-24393bc45843.png">
 
 
-➡️ : Delete User : localhost:8080/api/v1/user/delete?userId=14
+➡️ : Update Doctor : localhost:8080/api/v1/doctor/updateDoctor?doctorId=2
 
-<img width="1440" alt="Screenshot 2023-03-06 at 9 03 09 PM" src="https://user-images.githubusercontent.com/100271790/223181116-cde67e0d-30a4-433b-b78c-4ec940bd9ce4.png">
+<img width="1440" alt="Screenshot 2023-03-07 at 3 56 53 PM" src="https://user-images.githubusercontent.com/100271790/223396764-431679f3-9674-4094-8e76-3887fdb4a1ef.png">
 
-➡️ : FindAll Posts : localhost:8080/api/v1/post/get
 
-<img width="1440" alt="Screenshot 2023-03-06 at 10 42 20 PM" src="https://user-images.githubusercontent.com/100271790/223182741-caeb3c65-e763-4348-a5a5-9a464c80c60a.png">
+➡️ : Delete Doctor : localhost:8080/api/v1/doctor/deleteDoctor?doctorId=6
 
-➡️ : FindById Posts : localhost:8080/api/v1/post/get?postId=4
+<img width="1440" alt="Screenshot 2023-03-07 at 3 57 22 PM" src="https://user-images.githubusercontent.com/100271790/223396913-e772f4ef-b30d-4ead-97fd-7f263fd9c53a.png">
 
-<img width="1440" alt="Screenshot 2023-03-06 at 10 42 41 PM" src="https://user-images.githubusercontent.com/100271790/223182864-e23f51d5-8f95-458e-9f83-dcbea42c0a5c.png">
 
-➡️ : Create Post : localhost:8080/api/v1/post/save
+➡️ : FindAll Patient : localhost:8080/api/v1/patient/getPatient
 
-<img width="1440" alt="Screenshot 2023-03-06 at 10 52 37 PM" src="https://user-images.githubusercontent.com/100271790/223185248-ee4eb439-5c21-46ac-b891-60b557b0e681.png">
+<img width="1440" alt="Screenshot 2023-03-07 at 3 58 12 PM" src="https://user-images.githubusercontent.com/100271790/223397101-db43da54-19ea-4963-98dc-446a78199f50.png">
 
-➡️ : Update Post : localhost:8080/api/v1/post/update?postId=11
 
-<img width="1440" alt="Screenshot 2023-03-06 at 10 54 15 PM" src="https://user-images.githubusercontent.com/100271790/223185180-a4cb4607-5e2c-40ad-8ef7-a695a9c26f5d.png">
+➡️ : FindById Patient : localhost:8080/api/v1/patient/getPatient?patientId=3
 
-➡️ : Delete Post : localhost:8080/api/v1/post/delete?postId=10
+<img width="1440" alt="Screenshot 2023-03-07 at 3 58 23 PM" src="https://user-images.githubusercontent.com/100271790/223397249-08a4cfc1-421d-4297-ad20-e102f14c12ee.png">
 
-<img width="1440" alt="Screenshot 2023-03-06 at 10 52 18 PM" src="https://user-images.githubusercontent.com/100271790/223185416-0c43f50d-a08c-47df-ae66-bc2e4879cd83.png">
+
+➡️ : Create Patient : localhost:8080/api/v1/patient/savePatient
+
+<img width="1440" alt="Screenshot 2023-03-07 at 3 58 01 PM" src="https://user-images.githubusercontent.com/100271790/223397031-365dc84d-abca-49e0-8e53-74e48139c59c.png">
+
+
+➡️ : Update Patient : localhost:8080/api/v1/patient/updatePatient?patientId=10
+
+<img width="1440" alt="Screenshot 2023-03-07 at 3 59 05 PM" src="https://user-images.githubusercontent.com/100271790/223397339-bca01384-93b5-4533-b470-a098ffd530fc.png">
+
+
+➡️ : Delete Patient : localhost:8080/api/v1/patient/deletePatient?patientId=10
+
+<img width="1440" alt="Screenshot 2023-03-07 at 3 59 13 PM" src="https://user-images.githubusercontent.com/100271790/223397392-d9d0e9a0-bec4-4e98-9c11-9134ab5aa584.png">
 
 
 
