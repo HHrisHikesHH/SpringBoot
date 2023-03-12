@@ -20,9 +20,6 @@ public interface UserRepository extends JpaRepository<Users, Integer> {
     @Query(value = "select * from tbl_user where status_id = 1", nativeQuery = true)
     public List<Users> getAllUsers();
 
-    /*
-    * Use this method if the spring version is lower/upper than 3.0.3
-    */
     @Modifying
     @Transactional
     @Query(value = "update tbl_user set status_id = 2 where user_id = :userId",
