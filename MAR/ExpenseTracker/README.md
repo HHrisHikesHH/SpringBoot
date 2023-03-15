@@ -1,4 +1,4 @@
-# Project : Chat Application
+# Project : Expense Tracker Application
 ----------------------------
 
 ## Frameworks/Tools and languages used
@@ -97,11 +97,13 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ExpenseTracker/src/main
 
 ### Project Demo
 
+<img width="1426" alt="Screenshot 2023-03-16 at 1 43 44 AM" src="https://user-images.githubusercontent.com/100271790/225431621-25ef07e3-723a-49fb-b90f-07b0041aea01.png">
+
 #### Swagger Link
 
     http://3.139.88.52:8080/swagger-ui/index.html#/
 
-### Project Result and Video Explaination
+### Video Explaination
 
 
 
