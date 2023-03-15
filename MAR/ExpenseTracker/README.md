@@ -73,8 +73,7 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ExpenseTracker/src/main
 
 ##### 3.2  Product ⬇️ 
 
-<img width="431" alt="Screenshot 2023-03-15 at 8 56 34 PM" src="https://user-images.githubusercontent.com/100271790/225358556-c2c3f446-6ff1-4916-a7fb-9f33f6e8a5f2.png">
-
+<img width="834" alt="Screenshot 2023-03-15 at 9 57 31 PM" src="https://user-images.githubusercontent.com/100271790/225376045-214db89e-990a-4e41-b368-56a60785c713.png">
 
 #### To see Entire Repository
 
@@ -98,52 +97,12 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ExpenseTracker/src/main
 
 ### Project Demo
 
-    Swagger Link -> http://3.139.88.52:8080/swagger-ui/index.html#/
+#### Swagger Link
 
-### Project Result
+    http://3.139.88.52:8080/swagger-ui/index.html#/
 
-➡️ : FindAll User : localhost:8080/api/v1/user/get-users
+### Project Result and Video Explaination
 
-<img width="1440" alt="Screenshot 2023-03-10 at 11 48 35 AM" src="https://user-images.githubusercontent.com/100271790/224247619-a6bb6fff-a031-4ea6-be7c-5f087ca12c89.png">
-
-
-➡️ : FindById User : localhost:8080/api/v1/user/get-users?userId=1
-
-<img width="1440" alt="Screenshot 2023-03-10 at 11 48 52 AM" src="https://user-images.githubusercontent.com/100271790/224247696-2cf7d8e3-17f7-4269-a061-0d54cb9a95fc.png">
-
-
-➡️ : Create User : localhost:8080/api/v1/user/create-user
-
-<img width="1440" alt="Screenshot 2023-03-10 at 11 48 24 AM" src="https://user-images.githubusercontent.com/100271790/224247560-d93d69b3-049d-4428-bc05-dfed058be5f4.png">
-
-
-➡️ : Update User : localhost:8080/api/v1/user/update-user/2
-
-<img width="1440" alt="Screenshot 2023-03-10 at 12 02 42 PM" src="https://user-images.githubusercontent.com/100271790/224247772-b75c4f3e-b177-464a-bcf5-2b5a227241ea.png">
-
-
-➡️ : Delete User : localhost:8080/api/v1/user/delete-user/2
-
-<img width="1440" alt="Screenshot 2023-03-10 at 12 09 35 PM" src="https://user-images.githubusercontent.com/100271790/224247837-3d055f0a-8054-4f51-a590-6d97a88c503d.png">
-
-
-➡️ : Create Status : localhost:8080/api/v1/status/create-status
-
-<img width="1440" alt="Screenshot 2023-03-10 at 12 09 54 PM" src="https://user-images.githubusercontent.com/100271790/224247920-f277b18b-6838-4aac-a71b-cd20b82d8ded.png">
-
-
-➡️ : Create ChatHistory : localhost:8080/api/v1/chat/send-message
-
-<img width="1440" alt="Screenshot 2023-03-10 at 12 10 33 PM" src="https://user-images.githubusercontent.com/100271790/224248043-c894f192-cfa4-4656-bf18-292eb776e9f6.png">
-
-
-➡️ : FindById ChatHistory : localhost:8080/api/v1/chat/s?senderId=3
-<img width="1440" alt="Screenshot 2023-03-10 at 12 16 07 PM" src="https://user-images.githubusercontent.com/100271790/224248242-b8e1d17d-8a09-43f4-bc6f-b5b87417b4c0.png">
-
-
-➡️ : FindAll ChatHistory : localhost:8080/api/v1/chat/get-conversation?user1=1&user2=3
-
-<img width="1440" alt="Screenshot 2023-03-10 at 12 17 09 PM" src="https://user-images.githubusercontent.com/100271790/224248301-84065c15-1082-4688-9b75-3cc4ff4fa29b.png">
 
 
 
