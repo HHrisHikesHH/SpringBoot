@@ -117,6 +117,10 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ExpenseTracker/src/main
 ### Video Demo Link
 
     https://drive.google.com/file/d/15ORjjVW0Ila9WgAQnMt2zzX_A75JSk2G/view?usp=share_link
+    
+### Video Explaination Link
+
+    https://drive.google.com/file/d/1JgfS_slhP2HVnJ9KhPfE5zxfEYFsvFAm/view?usp=share_link
 
 
 
