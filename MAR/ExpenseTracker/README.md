@@ -95,6 +95,17 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ExpenseTracker/src/main
 
 ## Project Summary
 
+     1.) The Expense tracker project tracks the Expense of the different Users over many Products.
+     2.) Different EndPoints is been provided, 
+            for examples Total expense of particular user, Products in between particular dates,
+            Total expenses and other CRUD operrations.
+     3.) User need to signed-In once before using the service and also need to logged-In everytime
+            the system is rebooted, if user is not logged-In we cannot create any new expenses.
+     4.) User and Product validation is been provided by Validation dependency (@VALID).
+     5.) Custom JPA query as well as @Query Annotion is used for generating results from database.
+     6.) The link provided below is of swagger link which is hosted on AWS server.
+            
+
 ### Project Demo
 
 <img width="1426" alt="Screenshot 2023-03-16 at 1 43 44 AM" src="https://user-images.githubusercontent.com/100271790/225431621-25ef07e3-723a-49fb-b90f-07b0041aea01.png">
