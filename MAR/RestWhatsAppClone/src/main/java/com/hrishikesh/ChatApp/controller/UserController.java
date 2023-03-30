@@ -28,10 +28,6 @@ public class UserController {
         String response = userService.logIn(userId);
         return new ResponseEntity<>(response,HttpStatus.ACCEPTED);
     }
-
-    //log out
-    //log in
-    //solve login problem
     @GetMapping("showProfile")//✅
     private ResponseEntity<List<User>> showProfile
     (@Nullable String adminPassword) throws UserNotFoundException {
