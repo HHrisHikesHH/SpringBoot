@@ -7,7 +7,7 @@
     ➡️ MySQL DataBase
 --------------------------------------------------------------------------------------------------------------------
 ## Data flow in the project
- ### 0. Model : We have 3 models here namely Users, ChatHistory & Status:
+ ### 0. Model : We have 4 models here namely Users, Chat, Message, Dummy User:
 
  #### Followings are the Glimse of the Models:
 
@@ -30,7 +30,7 @@
 
  #### To see Models
  
-https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/com/geekster/chatApplication/model
+https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/RestWhatsAppClone/src/main/java/com/hrishikesh/ChatApp/model
  
 --------------------------------------------------------------------------------------------------------------------
 
@@ -38,17 +38,13 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/c
 
   #### Followings are the Glimse of the some of EndPoints of the Controller:
  
-##### 1.1  Users ⬇️  
+##### 0.1  Users ⬇️
 
-  <img width="885" alt="Screenshot 2023-03-10 at 12 27 39 PM" src="https://user-images.githubusercontent.com/100271790/224245489-6d6c2bc9-711a-41a7-aeba-8ec297ff3a2d.png">
+<img width="990" alt="Screenshot 2023-04-16 at 9 36 42 PM" src="https://user-images.githubusercontent.com/100271790/232325575-2526f9af-5159-46c6-94e6-ede911ba9539.png">
 
-##### 1.2  ChatHistory ⬇️
+##### 0.2  Message ⬇️
 
-<img width="842" alt="Screenshot 2023-03-10 at 12 28 18 PM" src="https://user-images.githubusercontent.com/100271790/224245611-c8d83b52-2aaf-4800-af3a-e857b94a2d10.png">
-
-##### 1.2  Status ⬇️
-
-<img width="863" alt="Screenshot 2023-03-10 at 12 28 48 PM" src="https://user-images.githubusercontent.com/100271790/224245724-440929aa-be8e-4e88-afe4-edab9ca087bf.png">
+<img width="1045" alt="Screenshot 2023-04-16 at 9 35 58 PM" src="https://user-images.githubusercontent.com/100271790/232325533-3cb0a1cb-ee4c-4357-8803-1b07f54788b6.png">
 
   #### To see Entire controller 
 https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/com/geekster/chatApplication/controller
