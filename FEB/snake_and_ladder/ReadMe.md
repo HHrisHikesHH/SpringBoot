@@ -20,5 +20,6 @@
 
     https://github.com/HHrisHikesHH/SpringBoot/blob/main/FEB/snake_and_ladder/Main.java
 
-    feel free to explore the entire code as i have written a modular code with simple and self explainatory functions and variable names.
+
+###### Feel free to explore the entire code as i have written a modular code with simple and self explainatory functions and variable names.
 
