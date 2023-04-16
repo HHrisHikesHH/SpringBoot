@@ -1,5 +1,6 @@
 # Project : RestWhatsAppClone
 
+
 ## Frameworks/Tools and languages used
     ➡️ SpringBoot
     ➡️ Java
@@ -29,25 +30,24 @@
 <img width="548" alt="Screenshot 2023-04-16 at 9 33 25 PM" src="https://user-images.githubusercontent.com/100271790/232325389-6c52331c-ad08-4b49-90ba-15f6ba22ac96.png">
 
  #### To see Models
- 
-https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/RestWhatsAppClone/src/main/java/com/hrishikesh/ChatApp/model
+    https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/RestWhatsAppClone/src/main/java/com/hrishikesh/ChatApp/model
  
 --------------------------------------------------------------------------------------------------------------------
 
-### 1. Controller : In Controller package the UserController is the gateWay to the API endpoints, Here we have provided many APIs perfrorm basic CRUD Operations on ToDo
+### 1. Controller : In Controller package the UserController is the gateWay to the API endpoints, Here we have provided many APIs perform the operations that some of the features provided by whatsapp like add contact, get chats, login, delete message etc. 
 
   #### Followings are the Glimse of the some of EndPoints of the Controller:
  
-##### 0.1  Users ⬇️
+##### 1.1  Users ⬇️
 
 <img width="990" alt="Screenshot 2023-04-16 at 9 36 42 PM" src="https://user-images.githubusercontent.com/100271790/232325575-2526f9af-5159-46c6-94e6-ede911ba9539.png">
 
-##### 0.2  Message ⬇️
+##### 1.2  Message ⬇️
 
 <img width="1045" alt="Screenshot 2023-04-16 at 9 35 58 PM" src="https://user-images.githubusercontent.com/100271790/232325533-3cb0a1cb-ee4c-4357-8803-1b07f54788b6.png">
 
   #### To see Entire controller 
-https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/com/geekster/chatApplication/controller
+    https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/com/geekster/chatApplication/controller
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -57,19 +57,20 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/c
    
 ##### 2.1  Users ⬇️  
 
-<img width="852" alt="Screenshot 2023-03-10 at 12 29 47 PM" src="https://user-images.githubusercontent.com/100271790/224245892-55a2ff07-4c4c-46b6-9957-4d786c2670c8.png">
+<img width="782" alt="Screenshot 2023-04-16 at 9 51 50 PM" src="https://user-images.githubusercontent.com/100271790/232326344-67acdf24-b843-4504-98b8-4130a5f824c4.png">
 
-##### 2.2  ChatHistory ⬇️ 
+##### 2.2  Chat ⬇️ 
 
-<img width="810" alt="Screenshot 2023-03-10 at 12 32 42 PM" src="https://user-images.githubusercontent.com/100271790/224246393-4072ead8-1bd2-43cb-80ce-316a509ec2e6.png">
+<img width="621" alt="Screenshot 2023-04-16 at 9 53 23 PM" src="https://user-images.githubusercontent.com/100271790/232326430-0f8637b6-c4ad-441c-ab9f-0c0d738e486b.png">
 
-##### 2.2  Status ⬇️
 
-<img width="499" alt="Screenshot 2023-03-10 at 12 32 11 PM" src="https://user-images.githubusercontent.com/100271790/224246308-c1522928-8adb-4e0c-ac25-4f48dcfa6e3c.png">
+##### 2.3  Message ⬇️
+
+<img width="953" alt="Screenshot 2023-04-16 at 9 52 37 PM" src="https://user-images.githubusercontent.com/100271790/232326385-4748267c-a072-43d8-a488-6ea5ca933da4.png">
 
 #### To see Entire Service
 
-https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/com/geekster/chatApplication/service
+    https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/RestWhatsAppClone/src/main/java/com/hrishikesh/ChatApp/service
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -78,21 +79,25 @@ https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/c
 #### Followings are the Glimse of the some of Custom methods Implemented in the Repository:
 
 ##### 3.1  Users ⬇️  
-<img width="970" alt="Screenshot 2023-03-10 at 12 34 19 PM" src="https://user-images.githubusercontent.com/100271790/224246679-2a102da8-6faf-4e2c-b69d-3fc2a89cf970.png">
 
+<img width="586" alt="Screenshot 2023-04-16 at 9 54 17 PM" src="https://user-images.githubusercontent.com/100271790/232326478-e11f14d4-4acf-46d2-9f28-88a4c06803a4.png">
 
-##### 3.2  ChatHistory ⬇️ 
-<img width="952" alt="Screenshot 2023-03-10 at 12 34 50 PM" src="https://user-images.githubusercontent.com/100271790/224246778-e298a830-6971-4026-8e46-5c9eb5da9f8a.png">
+##### 3.2  Chat ⬇️ 
 
+<img width="573" alt="Screenshot 2023-04-16 at 9 54 45 PM" src="https://user-images.githubusercontent.com/100271790/232326499-e36beb7a-2ec1-4613-8a12-71838d29a4be.png">
 
-##### 2.2  Status ⬇️
-<img width="677" alt="Screenshot 2023-03-10 at 12 34 36 PM" src="https://user-images.githubusercontent.com/100271790/224246736-0670951d-052a-4b8d-bd32-f5ba20be06c9.png">
+##### 3.3  Message ⬇️
 
+<img width="877" alt="Screenshot 2023-04-16 at 9 55 19 PM" src="https://user-images.githubusercontent.com/100271790/232326534-90f25988-51f7-4160-b319-5084b548e187.png">
+
+##### 3.4  DummyUser ⬇️
+
+<img width="673" alt="Screenshot 2023-04-16 at 9 55 43 PM" src="https://user-images.githubusercontent.com/100271790/232326545-0500ee1d-d012-48b2-af44-614b1b5f3297.png">
 
 #### To see Entire Repository
 
-https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/ChatApp/src/main/java/com/geekster/chatApplication/dao
-
+    https://github.com/HHrisHikesHH/SpringBoot/tree/main/MAR/RestWhatsAppClone/src/main/java/com/hrishikesh/ChatApp/dao
+    
 --------------------------------------------------------------------------------------------------------------------
 
 ### 4. DataBase : Here i have used mySQL : This database persist data even when the program is re-run.
