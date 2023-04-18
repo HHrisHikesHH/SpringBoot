@@ -2,7 +2,7 @@ package coffeeVending;
 
 import java.util.Scanner;
 
-public class Coffe {
+public class Coffee {
           public static long milk = 2000, water = 1000, coffee_beans = 100, wallet = 0;
 
           public static void main(String[] args) {
