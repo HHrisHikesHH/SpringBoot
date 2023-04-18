@@ -26,7 +26,7 @@ public class Car {
         service.put("GS01", 3000);
         service.put("CL01", 5000);
         car.cars.put("Sudan", service);
-        // service.clear();
+        
     }
 
     public static void main(String[] args) {
