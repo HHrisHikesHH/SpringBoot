@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class car {
+public class Car {
     public static Scanner scn = new Scanner(System.in);
     public static HashMap<String, HashMap<String, Integer>> cars = new HashMap<>();
 
